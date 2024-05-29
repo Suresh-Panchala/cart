@@ -32,13 +32,13 @@ class KioskApp:
         self.product_listbox = tk.Listbox(self.frame, width=70)
         self.product_listbox.pack()
 
-        self.total_label = tk.Label(self.frame,fg='green', text="Total: 0.00 Rs/-", font=("Arial", 14))
+        self.total_label = tk.Label(self.frame,fg='green',borderwidth=1, text="Total: 0.00 Rs/-", font=("Arial", 14))
         self.total_label.pack(pady=10)
 
-        self.remove_button = tk.Button(self.frame, text="Remove Selected", fg='red', command=self.remove_selected)
+        self.remove_button = tk.Button(self.frame, text="Remove Selected", fg='red', borderwidth=1,  command=self.remove_selected)
         self.remove_button.pack(pady=5)
 
-        self.clear_button = tk.Button(self.frame, text="Clear All",fg='blue', command=self.clear_all)
+        self.clear_button = tk.Button(self.frame, text="Clear All",fg='blue', borderwidth=1, command=self.clear_all)
         self.clear_button.pack(pady=5)
 
     def on_barcode_scan(self, event):
