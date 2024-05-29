@@ -6,6 +6,7 @@ class KioskApp:
     def __init__(self, root):
         self.root = root
         self.root.title("Shopping Cart")
+        self.root.wm_attributes('-fullscreen','true')
 
         # Products with their barcodes, names, prices, and weights
         self.products = {
